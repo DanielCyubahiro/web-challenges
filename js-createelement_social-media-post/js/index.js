@@ -36,3 +36,5 @@ const newButton = document.createElement('button');
 newButton.classList.add('post__button');
 newButton.textContent = '♥ Like';
 newPostFooter.append(newButton);
+
+newButton.addEventListener('click', handleLikeButtonClick);
