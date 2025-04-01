@@ -1,5 +1,5 @@
 {
-  "name": "react-with-local-storage_stored-note",
+  "name": "react-with-local-storage_journal-app-with-local-storage",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,7 +9,8 @@
   "dependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "use-local-storage-state": "^18.3.3"
+    "uid": "^2.0.1",
+    "use-local-storage-state": "^19.5.0"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",
