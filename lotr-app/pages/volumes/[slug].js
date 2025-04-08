@@ -1,10 +1,12 @@
 import { volumes } from "@/resources/lib/data";
 import BookDetails from "@/components/BookDetails";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
-const TheReturnOfTheKing = () => {
-  const currentVolume = volumes.find(
-    (volume) => volume.slug === "the-return-of-the-king");
+const Slug = () => {
+  const router = useRouter();
+  const { slug } = router.query;
+  const currentVolume = volumes.find((volume) => volume.slug === slug);
   return (
     <>
       <BookDetails volume={currentVolume} />
@@ -18,4 +20,4 @@ const TheReturnOfTheKing = () => {
   );
 };
 
-export default TheReturnOfTheKing;
+export default Slug;
