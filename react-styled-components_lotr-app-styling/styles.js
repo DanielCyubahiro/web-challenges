@@ -11,9 +11,12 @@ export const GlobalStyle = createGlobalStyle`
     *::before,
     *::after {
         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
 
     body {
         font-family: ${lora.style.fontFamily}, Serif;
+        font-size: 0.8rem;
     }
 `;
